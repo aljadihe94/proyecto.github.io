@@ -1,0 +1,30 @@
+*<form action="control.php" method="post" name="login_frm" enctype="application/x-www-form-urlencoded" id="form">
+	<?php
+	if($_GET["error"]=="si"){
+		echo "<span>Verifica tus datos</span>";
+	}else{
+		echo "Introduce tus datos";
+	}
+	?>
+		<section id="principal">
+			<h2>Bienvenidos</h2>
+			<article id="login">
+			<div>
+				<label for="ingreso"> Ingreso:</label>
+				<input type="text" name="usuario_txt" required />
+			</div>
+			<div>
+				<label for="contrasena"> Contraseña: </label>
+				<input type="password" name="password_txt"  required />
+			</div>
+			<div>
+				<input type="submit"  name="enviar_btn" value="Entrar" />
+
+				<input type="submit"  name="olvide_btn" value="Restaurar" />
+
+				<input type="submit"  name="registrarse_btn" value="Registrarse" />
+			</div>
+			</article>
+		</section>
+    </section>
+	</form>
